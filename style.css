@@ -1,0 +1,156 @@
+@font-face {
+    font-family: Gilroy-bold;
+    src: url(Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-medium;
+    src: url(Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-semibold;
+    src: url(Gilroy-SemiBold.ttf);
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+}
+
+a,p{
+    font-family: Gilroy-medium;
+    font-size: 18px;
+}
+
+h1{
+    font-family: Gilroy-bold;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: Gilroy-semibold;
+}
+
+header{
+    padding: 12px 145px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul{
+    display: inherit;
+    gap: 40px;
+    list-style-type: none;
+}
+
+nav > ul li a{
+    text-decoration: none;
+}
+
+#nav__links > li a{
+    color: #141414;
+}
+
+#nav__links > li:first-of-type a{
+    color: #0065FE;
+}
+
+#nav__links>li:nth-of-type(2) a{
+    display: inline-flex;
+    align-items: center;
+    gap: .3em;
+}
+
+#nav__links > li:nth-of-type(2) a::after{
+    content: "";
+    border: solid #141414;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+}
+
+#nav__cta  > li:first-of-type a{
+    color: #0065FE;
+}
+
+#nav__cta > li:nth-of-type(2) a{
+    color: #ffffff;
+    padding: 12px 24px;
+    background-color: #0065FE;
+    border-radius: 100px;
+}
+
+
+main{
+    margin-top: 106px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.hero__section h1{
+    font-size: 48px;
+    line-height: 96px;
+    color: #141414;
+    text-transform: capitalize;
+}
+
+.hero__section h1 > span{
+    color: #0065FE;
+}
+
+.hero__section img:first-of-type{
+    margin-top: -50px;
+}
+
+.hero__section p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #141414;
+}
+
+.hero__section--cta{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.hero__section--cta a{
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Gilroy-semibold;
+}
+
+.hero__section--cta a:first-of-type{
+    color: white;
+    padding: 12px 24px;
+    background-color: #0065FE;
+    border-radius: 100px;
+}
+
+.hero__section--cta a:last-of-type{
+    color: #0065FE;
+}
