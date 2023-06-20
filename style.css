@@ -199,3 +199,67 @@ main{
 .main__section--one h2 > span{
     color: #0065FE;
 }
+
+.main__section--two{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 128px 120px;
+}
+
+.section--two--heading{
+    display: inherit;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.section--two--heading h2{
+    display: inherit;
+    align-items: center;
+    gap: .3em;
+    font-size: 40px;
+    font-family: Gilroy-bold;
+}
+
+.section--two--heading h2 > span{
+    color: #0065FE;
+}
+
+.section--two--heading p{
+    font-size: 16px;
+    margin-left: 2em;
+}
+
+.grid--container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 64px;
+    column-gap: 28px;
+}
+
+.grid--container div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.grid--container div > img{
+    padding: .9em;
+    border-radius: 50%;
+    background-color: rgba(50, 132, 255, 0.13);
+}
+
+.grid--container div > h3{
+    font-size: 32px;
+    color: #141414;
+}
+
+.grid--container div > p{
+    font-size: 16px;
+    color: #141414;
+    line-height: 24px;
+}
