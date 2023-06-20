@@ -154,3 +154,48 @@ main{
 .hero__section--cta a:last-of-type{
     color: #0065FE;
 }
+
+.main__section--one{
+    padding: 60px 140px;
+    height: 220px;
+    background-color: #F9FBFD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main__section--one .flex--container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 72px;
+}
+
+.main__section--one .flex--container div{
+    display: inherit;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.main__section--one .flex--container div > h3{
+    font-size: 32px;
+    color: #141414;
+}
+
+.main__section--one .flex--container div > p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #141414;
+}
+
+.main__section--one h2{
+    text-transform: capitalize;
+    color: #141414;
+    font-size: 40px;
+}
+
+.main__section--one h2 > span{
+    color: #0065FE;
+}
